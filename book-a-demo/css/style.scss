@@ -1,0 +1,37 @@
+.bookBanner_1_0_0{
+    img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+.bookForm_1_0_0{
+    padding: 30px 0;
+    &__inner{
+        display: flex;
+    }
+    &__info{
+        width: 50%;
+    }
+    &__form{
+        width: 50%;
+    }
+    &__content{
+        ul{
+            li{
+                padding-bottom: 20px;
+            }
+        }
+    }
+    &__note{
+        color: #005284;
+        border-left: 3px solid #005284;
+        padding-left: 10px;
+    }
+    &__box{
+        background: url('../images/form-bg.jpg') no-repeat center;
+        background-size: cover;
+        padding: 30px;
+
+    }
+}
