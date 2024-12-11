@@ -1,0 +1,16 @@
+.navi_1_0_0_nav {
+  box-shadow: 0px 4px 13.3px 0px rgba(0, 0, 0, 0.1019607843);
+}
+.navi_1_0_0_nav__inner {
+  display: flex;
+  margin-left: -10px;
+}
+.navi_1_0_0_nav__item {
+  padding: 10px 0;
+  margin: 0 20px;
+  color: #005284;
+  cursor: pointer;
+}
+.navi_1_0_0_nav__item.active, .navi_1_0_0_nav__item:hover {
+  border-bottom: 2px solid #005284;
+}

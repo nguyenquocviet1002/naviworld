@@ -43,18 +43,19 @@
         }
     }
     &__nav{
-        ul{
-            list-style-type: none;
-            padding-left: 10px;
-            margin: 0;
-            li{
-                display: inline-block;
-                padding: 0 10px;
-                a{
-                    color: #5A5A5A;
-                    display: flex;
-                    align-items: center;
-                }
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+    }
+    &__item{
+        padding: 0 10px;
+        a{
+            color: #5A5A5A;
+            display: flex;
+            align-items: center;
+            transition: all 0.2s linear;
+            &:hover{
+                color: var(--second-button);
             }
         }
     }
@@ -109,6 +110,7 @@
             padding: 7px 10px;
             color: #000;
             border-bottom: 1px solid #5a5a5a4b;
+            transition: all 0.2s linear;
             &:hover{
                 background-color: #ccc;
             }
@@ -122,20 +124,36 @@
         border-radius: 55px;
         padding: 10px 20px;
         font-size: 14px;
+        transition: all 0.2s linear;
         img{
             padding-left: 10px;
         }
+        &:hover{
+            background-color: var(--second-button);
+        }
+    }
+    &__submenu{
+        width: 100%;
+        display: flex;
     }
     @media (max-width: 1200px){
         &__logo{
-            width: 150px;
+            width: 135px;
         }
-        &__nav ul li 
-        {
+        &__item{
             padding: 0 5px;
             a{
-            font-size: 14px;
+                font-size: 14px;
+            }
         }
-    }
+        &__action{
+            gap: 5px;
+        }
+        &__button{
+            font-size: 14px;
+            img{
+                display: none;
+            }
+        }
     }
 }

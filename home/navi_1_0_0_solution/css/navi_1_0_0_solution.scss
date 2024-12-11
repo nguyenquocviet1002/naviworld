@@ -1,0 +1,64 @@
+.navi_1_0_0_solution{
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 1920px;
+    padding: 40px 0;
+    &__inner{
+        display: flex;
+        margin: 0 -20px;
+    }
+    &__content{
+        width: 40%;
+    }
+    &__image{
+        width: 60%;
+        padding: 0 20px;
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    &__sub{
+        color: #005284;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    &__title{
+        color: #333637;
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    &__desc{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    &__tabs{
+        display: flex;
+        margin-left: -10px;
+    }
+    &__tab{
+        color: #fff;
+        color: var(--second-button);
+        border-radius: 55px;
+        border: 1px dashed var(--second-button);
+        padding: 8px 20px;
+        margin: 0 10px;
+        cursor: pointer;
+        transition: all 0.2s linear;
+        &.active, &:hover{
+            background-color: var(--second-button);
+            color: #fff;
+        }
+    }
+    &__list{
+        margin-top: 20px;
+    }
+    &__item{
+        font-weight: 600;
+        border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+}

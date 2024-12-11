@@ -1,0 +1,28 @@
+.navi_1_0_0_chooseUs{
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 1920px;
+    padding: 40px 0;
+    &__sub{
+        color: #005284;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    &__title{
+        color: #333637;
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    &__desc{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    &__img{
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+}

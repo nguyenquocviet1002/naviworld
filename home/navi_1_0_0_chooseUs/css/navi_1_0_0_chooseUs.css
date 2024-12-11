@@ -1,0 +1,26 @@
+.navi_1_0_0_chooseUs {
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 1920px;
+  padding: 40px 0;
+}
+.navi_1_0_0_chooseUs__sub {
+  color: #005284;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.navi_1_0_0_chooseUs__title {
+  color: #333637;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.navi_1_0_0_chooseUs__desc {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.navi_1_0_0_chooseUs__img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

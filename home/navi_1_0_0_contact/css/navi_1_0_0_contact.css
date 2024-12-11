@@ -1,0 +1,56 @@
+.navi_1_0_0_contact {
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.navi_1_0_0_contact__box {
+  width: 50%;
+  margin-left: auto;
+  margin-right: 0;
+}
+.navi_1_0_0_contact__title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.navi_1_0_0_contact__action {
+  display: flex;
+  justify-content: center;
+}
+.navi_1_0_0_contact__btn {
+  padding: 10px 30px;
+  border-radius: 4px;
+  color: #fff;
+  border: 1px solid transparent;
+  display: block;
+  margin: 0 10px;
+  transition: all 0.2s linear;
+}
+.navi_1_0_0_contact__btn--1 {
+  background-color: var(--primary-button);
+  border-color: var(--primary-button);
+}
+.navi_1_0_0_contact__btn--1:hover {
+  background-color: var(--second-button);
+  border-color: var(--second-button);
+}
+.navi_1_0_0_contact__btn--2 {
+  border-color: #fff;
+}
+.navi_1_0_0_contact__btn--2:hover {
+  background-color: var(--second-button);
+  border-color: var(--second-button);
+}
+@media (max-width: 767px) {
+  .navi_1_0_0_contact__title {
+    font-size: 18px;
+  }
+  .navi_1_0_0_contact__btn {
+    padding: 8px 20px;
+  }
+}
