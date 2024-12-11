@@ -1,0 +1,65 @@
+.navi_1_0_0_slider {
+  position: relative;
+}
+.navi_1_0_0_slider__text {
+  position: absolute;
+  left: 15%;
+  top: 15%;
+  color: #fff;
+  width: 30%;
+}
+.navi_1_0_0_slider__head {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+.navi_1_0_0_slider__action {
+  margin-top: 30px;
+}
+.navi_1_0_0_slider__btnPrimary {
+  color: #fff;
+  background-color: var(--primary-button);
+  border-radius: 40px;
+  padding: 8px 30px;
+  transition: all 0.2s linear;
+}
+.navi_1_0_0_slider__btnPrimary:hover {
+  background-color: var(--second-button);
+}
+.navi_1_0_0_slider__btnSecond {
+  color: var(--second-button);
+  background-color: #fff;
+  border-radius: 40px;
+  padding: 8px 20px;
+  transition: all 0.2s linear;
+  margin-left: 10px;
+}
+.navi_1_0_0_slider__btnSecond:hover {
+  background-color: var(--second-button);
+  color: #fff;
+}
+.navi_1_0_0_slider__control {
+  position: absolute;
+  bottom: 15%;
+  left: 15%;
+  width: 150px;
+  height: 20px;
+}
+.navi_1_0_0_slider__next {
+  color: #fff;
+}
+.navi_1_0_0_slider__next::after {
+  content: "";
+}
+.navi_1_0_0_slider__prev {
+  color: #fff;
+}
+.navi_1_0_0_slider__prev::after {
+  content: "";
+}
+.navi_1_0_0_slider img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}

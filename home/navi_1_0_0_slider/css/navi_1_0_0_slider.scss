@@ -1,0 +1,64 @@
+.navi_1_0_0_slider{
+    position: relative;
+    &__text{
+        position: absolute;
+        left: 15%;
+        top: 15%;
+        color: #fff;
+        width: 30%;
+    }
+    &__head{
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+    &__action{
+        margin-top: 30px;
+    }
+    &__btnPrimary{
+        color: #fff;
+        background-color: var(--primary-button);
+        border-radius: 40px;
+        padding: 8px 30px;
+        transition: all .2s linear;
+        &:hover{
+            background-color: var(--second-button);
+        }
+    }
+    &__btnSecond{
+        color: var(--second-button);
+        background-color: #fff;
+        border-radius: 40px;
+        padding: 8px 20px;
+        transition: all .2s linear;
+        margin-left: 10px;
+        &:hover{
+            background-color: var(--second-button);
+            color: #fff;
+        }
+    }
+    &__control{
+        position: absolute;
+        bottom: 15%;
+        left: 15%;
+        width: 150px;
+        height: 20px;
+    }
+    &__next{
+        color: #fff;
+        &::after{
+            content: '';
+        }
+    }
+    &__prev{
+        color: #fff;
+        &::after{
+            content: '';
+        }
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+}
