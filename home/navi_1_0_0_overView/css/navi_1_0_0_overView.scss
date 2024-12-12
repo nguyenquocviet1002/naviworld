@@ -41,4 +41,17 @@
             background-color: var(--second-button);
         }
     }
+    @media (max-width: 767px){
+        &__inner{
+            flex-direction: column;
+            margin: 0;
+        }
+        &__img, &__content{
+            width: 100%;
+            padding: 0;
+        }
+        &__img{
+            margin-bottom: 10px;
+        }
+    }
 }

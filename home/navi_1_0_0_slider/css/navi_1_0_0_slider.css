@@ -11,6 +11,7 @@
 .navi_1_0_0_slider__head {
   font-size: 48px;
   margin-bottom: 30px;
+  margin-top: 0;
 }
 .navi_1_0_0_slider__action {
   margin-top: 30px;
@@ -62,4 +63,22 @@
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 1180px) {
+  .navi_1_0_0_slider__text {
+    width: 40%;
+  }
+}
+@media (max-width: 960px) {
+  .navi_1_0_0_slider__head {
+    font-size: 30px;
+    margin-bottom: 13px;
+    margin-top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .navi_1_0_0_slider__text {
+    display: none;
+    width: 100%;
+  }
 }

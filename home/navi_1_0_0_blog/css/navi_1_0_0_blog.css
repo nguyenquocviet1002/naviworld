@@ -83,3 +83,23 @@
   height: auto;
   display: block;
 }
+@media (max-width: 767px) {
+  .navi_1_0_0_blog__postMain {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .navi_1_0_0_blog__imgMain {
+    width: 100%;
+  }
+  .navi_1_0_0_blog__contentMain {
+    width: 100%;
+  }
+  .navi_1_0_0_blog__list {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .navi_1_0_0_blog__item {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+}

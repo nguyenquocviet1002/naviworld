@@ -46,3 +46,15 @@
   margin-bottom: -1px;
   margin-left: 5px;
 }
+@media (max-width: 767px) {
+  .navi_1_0_0_service__list {
+    flex-wrap: wrap;
+  }
+  .navi_1_0_0_service__item {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+  .navi_1_0_0_service__item:last-child {
+    margin-top: 0;
+  }
+}
