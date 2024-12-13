@@ -31,7 +31,65 @@
     &__box{
         background: url('../images/form-bg.jpg') no-repeat center;
         background-size: cover;
-        padding: 30px;
-
+        padding: 50px;
+        box-shadow: 0px 4px 16px 0px #00000012;
+        margin-left: 30px;
+        border-radius: 5px;
+    }
+    &__group{
+        margin-bottom: 20px;
+        label{
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+            span{
+                color: red;
+            }
+        }
+        input{
+            border-radius: 5px;
+            background-color: #fff;
+            height: 40px;
+            width: 100%;
+            outline: none;
+            border: none;
+            box-shadow: 0px 4px 16px 0px #00000012;
+        }
+    }
+    &__checkbox{
+        display: flex;
+        align-items: flex-start;
+        input{
+            margin-top: 1px;
+            margin-right: 5px;
+        }
+    }
+    &__submit{
+        background-color: var(--second-button);
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 8px 10px;
+        border-radius: 5px;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: all 0.2s linear;
+        &:hover{
+            background-color: var(--primary-button);
+        }
+    }
+    @media (max-width: 767px){
+        &__inner{
+            flex-direction: column;
+        }
+        &__info, &__form{
+            width: 100%;
+        }
+        &__form{
+            margin-top: 20px;
+        }
+        &__box{
+            margin: 0;
+        }
     }
 }

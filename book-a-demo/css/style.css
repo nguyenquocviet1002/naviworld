@@ -27,5 +27,64 @@
 .bookForm_1_0_0__box {
   background: url("../images/form-bg.jpg") no-repeat center;
   background-size: cover;
-  padding: 30px;
+  padding: 50px;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.0705882353);
+  margin-left: 30px;
+  border-radius: 5px;
+}
+.bookForm_1_0_0__group {
+  margin-bottom: 20px;
+}
+.bookForm_1_0_0__group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.bookForm_1_0_0__group label span {
+  color: red;
+}
+.bookForm_1_0_0__group input {
+  border-radius: 5px;
+  background-color: #fff;
+  height: 40px;
+  width: 100%;
+  outline: none;
+  border: none;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.0705882353);
+}
+.bookForm_1_0_0__checkbox {
+  display: flex;
+  align-items: flex-start;
+}
+.bookForm_1_0_0__checkbox input {
+  margin-top: 1px;
+  margin-right: 5px;
+}
+.bookForm_1_0_0__submit {
+  background-color: var(--second-button);
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 8px 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.bookForm_1_0_0__submit:hover {
+  background-color: var(--primary-button);
+}
+@media (max-width: 767px) {
+  .bookForm_1_0_0__inner {
+    flex-direction: column;
+  }
+  .bookForm_1_0_0__info, .bookForm_1_0_0__form {
+    width: 100%;
+  }
+  .bookForm_1_0_0__form {
+    margin-top: 20px;
+  }
+  .bookForm_1_0_0__box {
+    margin: 0;
+  }
 }
