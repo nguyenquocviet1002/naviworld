@@ -1,0 +1,48 @@
+.navi_1_0_0_founder{
+    background-color: #fff;
+    padding: 30px 0;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__sub{
+        text-align: center;
+        color: #005284;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    &__title{
+    text-align: center;
+        color: #333637;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    &__item{
+        width: 30%;
+        padding: 0 30px;
+    }
+    &__name{
+        font-weight: 600;
+        text-align: center;
+        color: #005284;
+        font-size: 21px;
+        margin: 15px 0;
+        span{
+            color: #C92030;
+        }
+    }
+    &__desc{
+        text-align: center;
+    }
+    img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    @media (max-width: 767px){
+        &__inner{
+            flex-direction: column;
+            margin: 0;
+        }
+    }
+}
