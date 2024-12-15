@@ -1,21 +1,16 @@
-.navi_1_0_0_key{
+.navi_1_0_0_overView{
     padding: 40px 0;
-    background-color: #F5F5F5;
     &__inner{
         display: flex;
         margin: 0 -20px;
     }
     &__img{
         width: 50%;
-        padding: 20px 0 20px 0;
-        background-color: #1C234E;
+        padding: 0 20px;
         img{
-            width: calc(100% + 10px);
+            width: 100%;
             height: auto;
             display: block;
-            margin-left: -10px;
-            border-top-left-radius: 10px;
-            border-bottom-left-radius: 10px;
         }
     }
     &__content{
@@ -35,11 +30,15 @@
     &__desc{
         margin: 20px 0;
     }
-    &__ups{
-        img{
-            width: 100%;
-            height: auto;
-            display: block;
+    &__btn{
+        display: inline-block;
+        color: #fff;
+        background-color: var(--primary-button);
+        border-radius: 40px;
+        padding: 10px 30px;
+        transition: all .2s linear;
+        &:hover{
+            background-color: var(--second-button);
         }
     }
     @media (max-width: 767px){
@@ -52,13 +51,6 @@
             padding: 0;
         }
         &__img{
-            background-color: transparent;
-            img{
-                border-radius: 10px;
-                margin-left: 0;
-                width: 100%;
-            }
-            margin-top: 10px;
             margin-bottom: 10px;
         }
     }

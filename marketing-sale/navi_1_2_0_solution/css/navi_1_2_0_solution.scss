@@ -1,0 +1,40 @@
+.navi_1_2_0_solution{
+    padding: 0 30px;
+    &__inner{
+        display: flex;
+        border-radius: 10px;
+        background-color: #F9F9F9;
+        padding: 30px;
+    }
+    &__content{
+        width: 50%;
+        padding-right: 20px;
+    }
+    &__img{
+        width: 50%;
+        img{
+            width: 100%;
+        }
+    }
+    &__sub{
+        color: #005284;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    &__title{
+        color: #333637;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    &__desc{
+        margin: 20px 0;
+    }
+    @media (max-width: 767px){
+        &__inner{
+            flex-direction: column;
+        }
+        &__content, &__img{
+            width: 100%;
+        }
+    }
+}
