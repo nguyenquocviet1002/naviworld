@@ -1,0 +1,21 @@
+.navi_1_2_0_testimonials {
+  padding: 40px 0;
+}
+.navi_1_2_0_testimonials__sub {
+  color: #005284;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.navi_1_2_0_testimonials__title {
+  color: #333637;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.navi_1_2_0_testimonials__desc {
+  margin: 20px 0;
+}
+.navi_1_2_0_testimonials img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

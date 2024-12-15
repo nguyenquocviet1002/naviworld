@@ -1,0 +1,57 @@
+.navi_1_0_0_overView{
+    padding: 40px 0;
+    &__inner{
+        display: flex;
+        margin: 0 -20px;
+    }
+    &__img{
+        width: 50%;
+        padding: 0 20px;
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    &__content{
+        width: 50%;
+        padding: 0 20px;
+    }
+    &__sub{
+        color: #005284;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    &__title{
+        color: #333637;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    &__desc{
+        margin: 20px 0;
+    }
+    &__btn{
+        display: inline-block;
+        color: #fff;
+        background-color: var(--primary-button);
+        border-radius: 40px;
+        padding: 10px 30px;
+        transition: all .2s linear;
+        &:hover{
+            background-color: var(--second-button);
+        }
+    }
+    @media (max-width: 767px){
+        &__inner{
+            flex-direction: column;
+            margin: 0;
+        }
+        &__img, &__content{
+            width: 100%;
+            padding: 0;
+        }
+        &__img{
+            margin-bottom: 10px;
+        }
+    }
+}

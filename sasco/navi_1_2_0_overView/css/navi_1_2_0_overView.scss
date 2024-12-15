@@ -1,0 +1,70 @@
+.navi_1_2_0_overView{
+    padding: 40px 0;
+    &__inner{
+        display: flex;
+        margin: 0 -20px;
+    }
+    &__img{
+        width: 50%;
+        padding: 0 20px;
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    &__content{
+        width: 50%;
+        padding: 0 20px;
+    }
+    &__sub{
+        color: #005284;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    &__title{
+        color: #333637;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    &__desc{
+        margin: 20px 0;
+    }
+    &__info{
+        border-top: 1px solid #D7D7D7;
+        padding-top: 20px;
+    }
+    &__infoItem{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &__icon{
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+        object-fit: contain;
+    }
+    &__text{
+        margin: 0;
+        font-weight: 500;
+        color: #000;
+    }
+    @media (max-width: 767px){
+        &__inner{
+            flex-direction: column;
+            margin: 0;
+        }
+        &__img, &__content{
+            width: 100%;
+            padding: 0;
+        }
+        &__img{
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+    }
+}

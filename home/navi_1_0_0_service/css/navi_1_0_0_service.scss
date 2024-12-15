@@ -16,12 +16,12 @@
     }
     &__item{
         width: 33.3%;
-        box-shadow: 0px 2px 21.4px 0px #0000000D;
-        transition: all 0.2s linear;
         padding: 20px;
         border-radius: 10px;
         margin: 0 10px;
         background-color: #fff;
+        box-shadow: 0px 2px 21.4px 0px #0000000D;
+        transition: all 0.2s linear;
         &:hover{
             box-shadow: 0px 2px 35.7px 0px #00000021;
         }

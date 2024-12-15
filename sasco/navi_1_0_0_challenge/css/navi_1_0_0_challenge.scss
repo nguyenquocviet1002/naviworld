@@ -1,0 +1,28 @@
+.navi_1_0_0_challenge{
+    background-color: #F5F5F5;
+    padding: 30px 0;
+    &__sub{
+        color: #005284;
+        margin-bottom: 10px;
+        font-size: 15px;
+        text-align: center;
+    }
+    &__title{
+        color: #333637;
+        font-size: 32px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    &__desc{
+        margin: 20px 0;
+        text-align: center;
+    }
+    &__img{
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 15px;
+        }
+    }
+}
