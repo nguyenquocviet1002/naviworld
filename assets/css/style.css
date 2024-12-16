@@ -5,7 +5,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -317,18 +316,49 @@ template {
 :root {
   --primary-button: #C92030;
   --second-button: #005284;
+  --weight-400: "Fz Poppins";
+  --weight-500: "Fz Poppins Med";
+  --weight-600: "Fz Poppins SemBd";
+  --weight-700: "Fz Poppins Bd";
 }
 
 .button-primary {
   color: #fff;
 }
 
+@font-face {
+  font-family: "Fz Poppins";
+  src: url("../font/FzPoppins-Regular.woff2") format("woff2"), url("../font/FzPoppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fz Poppins Bd";
+  src: url("../font/FzPoppins-Bold.woff2") format("woff2"), url("../font/FzPoppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fz Poppins Med";
+  src: url("../font/FzPoppins-Medium.woff2") format("woff2"), url("../font/FzPoppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fz Poppins SemBd";
+  src: url("../font/FzPoppins-SemiBold.woff2") format("woff2"), url("../font/FzPoppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 html,
 body {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: var(--weight-400);
   color: #515151;
+  line-height: 1.5;
 }
 
 section[id] {
