@@ -5,12 +5,11 @@
 .navi_1_0_0_blog__sub {
   color: #005284;
   margin-bottom: 10px;
-  font-size: 15px;
   text-align: center;
 }
 .navi_1_0_0_blog__title {
   color: #333637;
-  font-size: 32px;
+  font-size: 40px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -35,7 +34,7 @@
 }
 .navi_1_0_0_blog__contentMain {
   width: 60%;
-  padding: 30px;
+  padding: 50px 80px;
 }
 .navi_1_0_0_blog__date {
   font-size: 14px;
@@ -44,7 +43,7 @@
 }
 .navi_1_0_0_blog__head {
   font-size: 20px;
-  font-weight: 500;
+  font-family: var(--weight-500);
   color: #101828;
   margin-bottom: 20px;
 }
@@ -55,7 +54,7 @@
 .navi_1_0_0_blog__more {
   display: inline-block;
   color: var(--primary-button);
-  font-weight: 600;
+  font-family: var(--weight-600);
 }
 .navi_1_0_0_blog__more img {
   margin-bottom: -1px;

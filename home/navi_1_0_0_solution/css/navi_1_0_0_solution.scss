@@ -6,10 +6,11 @@
     padding: 40px 0;
     &__inner{
         display: flex;
-        margin: 0 -20px;
+        margin-top: 40px;
     }
     &__content{
         width: 40%;
+        padding-right: 100px;
     }
     &__image{
         width: 60%;
@@ -23,15 +24,13 @@
     &__sub{
         color: #005284;
         margin-bottom: 10px;
-        font-size: 15px;
     }
     &__title{
         color: #333637;
-        font-size: 32px;
+        font-size: 40px;
         margin-bottom: 10px;
     }
     &__desc{
-        font-size: 14px;
         margin-bottom: 20px;
     }
     &__tabs{
@@ -55,11 +54,50 @@
     &__list{
         margin-top: 20px;
     }
+    &__post{
+        &.active{
+            border-left: 2px solid var(--primary-button);
+            .navi_1_0_0_solution__desc{
+                display: block;
+            }
+            .navi_1_0_0_solution__item{
+                img{
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        padding-left: 30px;
+    }
     &__item{
-        font-weight: 600;
+        font-family: var(--weight-600);
+        text-transform: capitalize;
+        color: #000;
         border-bottom: 1px solid rgb(0, 0, 0, 0.1);
-        padding-bottom: 10px;
+        padding-bottom: 13px;
+        margin-bottom: 13px;
+        display: flex;
+        align-items: center;
+        font-size: 17px;
+        cursor: pointer;
+        img{
+            margin-left: 10px;
+            width: 9px;
+            height: 6px;
+        }
+    }
+    &__desc{
+        display: none;
+    }
+    &__meta{
         margin-bottom: 10px;
+    }
+    &__more{
+        font-family: var(--weight-600);
+        color: var(--primary-button);
+        img{
+            width: 6px;
+            height: 12px;
+        }
     }
     @media (max-width: 767px){
         &__inner{
