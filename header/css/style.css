@@ -1,10 +1,7 @@
 .header_1_0_0 {
   position: relative;
   font-size: 15px;
-  position: fixed;
-  top: 0;
   z-index: 2;
-  width: 100%;
 }
 .header_1_0_0__top {
   background-color: var(--primary-button);

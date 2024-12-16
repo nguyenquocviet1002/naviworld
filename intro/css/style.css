@@ -4,6 +4,9 @@ body {
 
 .navi_1_0_0_intro {
   background-color: #F7F7F7;
+  display: flex;
+  align-items: center;
+  height: 100vh;
 }
 .navi_1_0_0_intro__container {
   max-width: 1024px;

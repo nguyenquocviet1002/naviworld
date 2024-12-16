@@ -374,15 +374,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  padding-top: 93px;
-}
-@media (max-width: 767px) {
-  body {
-    padding-top: 110px;
-  }
-}
-
 .container {
   width: 100%;
   padding: 0 15px;
