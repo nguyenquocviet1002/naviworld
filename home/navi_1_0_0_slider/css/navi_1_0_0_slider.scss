@@ -1,76 +1,85 @@
 .navi_1_0_0_slider {
-  position: relative;
-  &__text {
-    position: absolute;
-    left: 15%;
-    top: 15%;
+  .container{
+    position: relative;
+  }
+  &__item {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 90px 0 240px;
+  }
+  &__box {
+    width: 44%;
     color: #fff;
-    width: 30%;
   }
   &__head {
     font-size: 48px;
     margin-bottom: 30px;
     margin-top: 0;
   }
+  &__desc {
+    margin: 0;
+    line-height: 1.6;
+  }
   &__action {
-    margin-top: 30px;
+    margin-top: 40px;
   }
-  &__btnPrimary {
+  &__btn {
     color: #fff;
-    background-color: var(--primary-button);
     border-radius: 40px;
-    padding: 8px 30px;
+    padding: 10px 25px;
     transition: all 0.2s linear;
-    &:hover {
-      background-color: var(--second-button);
+    &--1 {
+      background-color: var(--primary-button);
+      &:hover {
+        background-color: var(--second-button);
+      }
     }
-  }
-  &__btnSecond {
-    color: var(--second-button);
-    background-color: #fff;
-    border-radius: 40px;
-    padding: 8px 20px;
-    transition: all 0.2s linear;
-    margin-left: 10px;
-    &:hover {
-      background-color: var(--second-button);
-      color: #fff;
+    &--2 {
+      color: var(--second-button);
+      background-color: #fff;
+      margin-left: 15px;
+      &:hover {
+        background-color: var(--second-button);
+        color: #fff;
+      }
     }
   }
   &__control {
     position: absolute;
     width: 150px;
     height: 20px;
-    left: 15%;
-    bottom: 30%;
+    left: 0;
+    bottom: 160px;
   }
-  .swiper-pagination{
+  .swiper-pagination {
     width: fit-content;
     bottom: unset;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  } 
-  &__next, &__prev {
-    width: 10px;
+  }
+  &__next,
+  &__prev {
+    width: 8px;
     z-index: 10;
-    img{
+    img {
       width: 100% !important;
       height: auto !important;
       display: block;
     }
-    &::after{
-      content: '';
+    &::after {
+      content: "";
     }
   }
-  .swiper-pagination-bullet{
+  .swiper-pagination-bullet {
     background: #fff;
     opacity: 1;
-    width: 10px;
-    height: 10px;
+    width: 9px;
+    height: 9px;
     margin: 0 10px !important;
   }
-  .swiper-pagination-bullet-active{
+  .swiper-pagination-bullet-active {
     background: transparent;
     border: 1px solid #fff;
     transform: scale(1.4);
@@ -82,21 +91,31 @@
     object-fit: cover;
   }
   @media (max-width: 1180px) {
-    &__text {
-      width: 40%;
+    &__item{
+      padding: 60px 0 130px;
+    }
+    &__control{
+      bottom: 60px;
     }
   }
-  @media (max-width: 960px) {
+  @media (max-width: 991px) {
+    &__box{
+      width: 70%;
+    }
+    &__item{
+      padding: 40px 0 90px;
+    }
     &__head {
-      font-size: 30px;
-      margin-bottom: 13px;
-      margin-top: 0;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    &__control{
+      bottom: 30px;
     }
   }
   @media (max-width: 767px) {
-    &__text{
-        display: none;
-        width: 100%;
+    &__box{
+      width: 100%;
     }
   }
 }
