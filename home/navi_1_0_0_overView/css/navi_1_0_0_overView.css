@@ -1,13 +1,11 @@
 .navi_1_0_0_overView {
-  padding: 40px 0;
+  padding: 70px 0 50px;
 }
 .navi_1_0_0_overView__inner {
   display: flex;
-  margin: 0 -20px;
 }
 .navi_1_0_0_overView__img {
   width: 50%;
-  padding: 0 20px;
 }
 .navi_1_0_0_overView__img img {
   width: 100%;
@@ -16,7 +14,7 @@
 }
 .navi_1_0_0_overView__content {
   width: 50%;
-  padding: 0 20px;
+  padding-left: 70px;
 }
 .navi_1_0_0_overView__sub {
   color: #005284;

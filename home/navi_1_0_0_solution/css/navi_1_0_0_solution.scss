@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-position: top;
     background-size: 1920px;
-    padding: 40px 0;
+    padding: 50px 0;
     &__inner{
         display: flex;
         margin-top: 40px;
@@ -14,7 +14,6 @@
     }
     &__image{
         width: 60%;
-        padding: 0 20px;
         img{
             width: 100%;
             height: auto;
