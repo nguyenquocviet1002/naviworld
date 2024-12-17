@@ -1,7 +1,54 @@
 .navi_1_0_0_vision{
-    img{
-        width: 100%;
-        height: auto;
-        display: block;
+    background: url('../images/vision-bg.jpg') no-repeat center;
+    background-size: cover;
+    padding: 40px 0;
+    color: #fff;
+    &__content{
+        width: 50%;
+    }
+    &__item{
+        position: relative;
+        padding-left: 50px;
+        padding-bottom: 40px;
+        &::before{
+            border-radius: 100%;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            content: '';
+            width: 10px;
+            height: 10px;
+            background-color: #0C8FD3;
+            border: 3px solid #fff;
+            box-shadow: 0 0 0 3px #ffffff5b;
+            z-index: 1;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 1px;
+            top: 20px;
+            left: 7px;
+            background-color: #ffffff5b;
+        }
+        &:last-child{
+            padding-bottom: 0;
+            &::after{
+                height: 0;
+            }
+        }
+    }
+    &__head{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    &__text{
+        line-height: 1.6;
+    }
+    @media (max-width: 767px){
+        &__content{
+            width: 100%;
+        }
     }
 }

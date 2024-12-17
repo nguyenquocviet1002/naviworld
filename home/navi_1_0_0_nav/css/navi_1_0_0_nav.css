@@ -20,8 +20,3 @@
 .navi_1_0_0_nav__item.active, .navi_1_0_0_nav__item:hover {
   border-color: #005284;
 }
-@media (max-width: 767px) {
-  .navi_1_0_0_nav {
-    top: 110px;
-  }
-}

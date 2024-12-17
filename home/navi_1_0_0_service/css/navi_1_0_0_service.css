@@ -12,13 +12,14 @@
 }
 .navi_1_0_0_service__list {
   position: relative;
-  padding-top: 20px;
+}
+.navi_1_0_0_service__mySwiper {
+  padding: 40px 10px 30px;
 }
 .navi_1_0_0_service__item {
   width: 100%;
   padding: 30px;
   border-radius: 10px;
-  margin: 0 15px;
   background-color: #fff;
   box-shadow: 0px 2px 21.4px 0px rgba(0, 0, 0, 0.0509803922);
   transition: all 0.2s linear;

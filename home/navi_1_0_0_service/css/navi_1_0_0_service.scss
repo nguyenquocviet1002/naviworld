@@ -11,13 +11,14 @@
     }
     &__list{
         position: relative;
-        padding-top: 20px;
+    }
+    &__mySwiper{
+        padding: 40px 10px 30px;
     }
     &__item{
         width: 100%;
         padding: 30px;
         border-radius: 10px;
-        margin: 0 15px;
         background-color: #fff;
         box-shadow: 0px 2px 21.4px 0px #0000000D;
         transition: all 0.2s linear;
