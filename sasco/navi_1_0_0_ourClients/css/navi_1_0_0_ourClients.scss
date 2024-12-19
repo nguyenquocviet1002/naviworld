@@ -6,13 +6,9 @@
         margin: 0 -20px;
     }
     &__img{
+        overflow: hidden;
         width: 50%;
         padding: 0 20px;
-        img{
-            width: 100%;
-            height: auto;
-            display: block;
-        }
     }
     &__content{
         width: 50%;
@@ -43,6 +39,29 @@
             margin-bottom: 0;
         }
     }
+    &__item{
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        img{
+            height: 40px;
+            object-fit: contain;
+            margin: 20px 20px;
+            filter: grayscale(1);
+            transition: all 0.3s ease; 
+            &:hover{
+                filter: grayscale(0);
+            }
+        }
+        .img1{
+            height: 90px;
+        }
+        .img2{
+            width: 60px;
+        }
+    }
     &__icon{
         width: 25px;
         height: 25px;
@@ -54,6 +73,45 @@
         font-weight: 500;
         color: #000;
     }
+    &__control {
+        position: absolute;
+        width: 150px;
+        height: 20px;
+        right: 0;
+        top: 0px;
+      }
+      .swiper-pagination {
+        width: fit-content;
+        bottom: unset;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &__next,
+      &__prev {
+        width: 8px;
+        z-index: 10;
+        img {
+          width: 100% !important;
+          height: auto !important;
+          display: block;
+        }
+        &::after {
+          content: "";
+        }
+      }
+      .swiper-pagination-bullet {
+        background: var(--second-button);
+        opacity: 1;
+        width: 9px;
+        height: 9px;
+        margin: 0 10px !important;
+      }
+      .swiper-pagination-bullet-active {
+        background: transparent;
+        border: 1px solid var(--second-button);
+        transform: scale(1.4);
+      }
     @media (max-width: 767px){
         &__inner{
             flex-direction: column;
