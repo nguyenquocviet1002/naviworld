@@ -185,7 +185,7 @@
       background-color: #fff;
       color: #005284;
       img {
-        display: none;
+        filter: invert(1);
       }
     }
   }

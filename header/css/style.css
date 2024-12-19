@@ -184,7 +184,7 @@
   color: #005284;
 }
 .header_1_0_0__subMore:hover img {
-  display: none;
+  filter: invert(1);
 }
 .header_1_0_0__desc {
   width: 25%;
