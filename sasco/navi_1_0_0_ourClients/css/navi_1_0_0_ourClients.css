@@ -48,7 +48,8 @@
   flex-wrap: wrap;
 }
 .navi_1_2_0_overView__item img {
-  height: 40px;
+  width: auto;
+  height: 40px !important;
   -o-object-fit: contain;
      object-fit: contain;
   margin: 20px 20px;
