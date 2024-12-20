@@ -315,23 +315,33 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="post_1_0_0__control" style="display: none;">
-                            <div class="swiper-button-next post_1_0_0__next">&#10093;</div>
-                            <div class="swiper-button-prev post_1_0_0__prev">&#10092;</div>
-                            <div class="swiper-pagination post_1_0_0__pagination"></div>
-                        </div>
+                    </div>
+                    <div class="post_1_0_0__control">
+                        <div class="swiper-button-next post_1_0_0__next"><img
+                            src="../home/navi_1_0_0_slider/images/icon-next2.png" alt=""></div>
+                        <div class="swiper-button-prev post_1_0_0__prev"><img
+                            src="../home/navi_1_0_0_slider/images/icon-prev2.png" alt=""></div>
+                        <div class="swiper-pagination post_1_0_0__pagination"></div>
                     </div>
                 </div>
-                <div class="post_1_0_0__recentPost">
-                    <a href="/naviworld/new-event" class="post_1_0_0__recentLine">
-                        Lorem Ipsum est un texte d’espace réservé couramment utilisé dans les
-                    </a>
-                    <a href="/naviworld/new-event" class="post_1_0_0__recentLine">
-                        Lorem Ipsum est un texte d’espace réservé couramment utilisé dans les
-                    </a>
-                    <a href="/naviworld/new-event" class="post_1_0_0__recentLine">
-                        Lorem Ipsum est un texte d’espace réservé couramment utilisé dans les
-                    </a>
+                <div class="post_1_0_0__recentPost mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="post_1_0_0__recentLine">
+                                Lorem Ipsum est un texte d’espace réservé couramment utilisé dans les
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="post_1_0_0__recentLine">
+                                Lorem Ipsum est un texte d’espace réservé couramment utilisé dans les
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="post_1_0_0__recentLine">
+                                Lorem Ipsum est un texte d’espace réservé couramment utilisé dans les
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -496,16 +506,23 @@
     <script src="../header/js/script.js"></script>
     <script src="../assets/js/swiper-bundle.min.js"></script>
     <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 20,
+            slidesPerView: 3,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
         var post_1_0_0 = new Swiper(".post_1_0_0__mySwiper", {
             loop: true,
+            thumbs: {
+                swiper: swiper,
+            },
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
             pagination: {
                 el: ".swiper-pagination",
-                dynamicBullets: true,
-                dynamicMainBullets: 2,
             },
         });
     </script>
