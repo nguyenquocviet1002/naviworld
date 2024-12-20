@@ -60,6 +60,7 @@
     }
 
     &__itemCard {
+        display: block;
         width: calc(33% - 10px);
         background-color: #fff;
         border: 1px solid #dee2e6;
@@ -91,6 +92,7 @@
         font-weight: 500;
         margin-bottom: 10px;
         line-height: 24px;
+        color: #000;
     }
 
     &__descCard {

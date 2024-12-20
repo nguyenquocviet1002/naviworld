@@ -3,6 +3,7 @@
   position: sticky;
   top: 0;
   background-color: #fff;
+  z-index: 10;
 }
 .navi_1_0_0_nav__inner {
   display: flex;
