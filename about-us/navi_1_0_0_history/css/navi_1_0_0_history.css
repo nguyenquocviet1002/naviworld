@@ -1,6 +1,6 @@
 .navi_1_0_0_history {
-  background-color: #fff;
-  padding: 30px 0;
+  background: url(../images/history-bg.jpg) no-repeat center center/cover;
+  padding: 40px 0;
 }
 .navi_1_0_0_history__inner {
   display: flex;
@@ -8,9 +8,11 @@
 }
 .navi_1_0_0_history__img {
   width: 50%;
-  padding: 0 20px;
+  padding-right: 50px;
 }
 .navi_1_0_0_history__img img {
+  box-shadow: 10px 4px 35.4px 0px rgba(0, 0, 0, 0.1215686275);
+  border-radius: 10px;
   width: 100%;
   height: auto;
   display: block;
@@ -26,13 +28,52 @@
 }
 .navi_1_0_0_history__title {
   color: #333637;
-  font-size: 32px;
+  font-size: 40px;
   margin-bottom: 20px;
 }
 .navi_1_0_0_history__timeline img {
   width: 100%;
   height: auto;
   display: block;
+}
+.navi_1_0_0_history__item {
+  position: relative;
+  margin-bottom: 50px;
+}
+.navi_1_0_0_history__item:last-child {
+  margin-bottom: 0;
+}
+.navi_1_0_0_history__item.active .navi_1_0_0_history__year {
+  opacity: 1;
+  padding-left: 20px;
+}
+.navi_1_0_0_history__item.active .navi_1_0_0_history__year::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, 0);
+  width: 20px;
+  height: 3px;
+  background: #2381BD;
+}
+.navi_1_0_0_history__item.active .navi_1_0_0_history__text {
+  display: block;
+}
+.navi_1_0_0_history__year {
+  position: relative;
+  color: #202020;
+  font-family: var(--weight-600);
+  font-size: 32px;
+  margin-bottom: 10px;
+  opacity: 0.2;
+}
+.navi_1_0_0_history__text {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 130px;
+  color: #7D7D7D;
 }
 @media (max-width: 767px) {
   .navi_1_0_0_history__inner {

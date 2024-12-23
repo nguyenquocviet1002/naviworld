@@ -1,7 +1,64 @@
-.navi_1_0_0_team{
-    img{
-        width: 100%;
-        height: auto;
-        display: block;
+.navi_1_0_0_team {
+  background: url(../images/bg.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 40px 0;
+  &__sub {
+    color: #005284;
+    margin-bottom: 10px;
+  }
+  &__title {
+    color: #333637;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  &__list {
+    position: relative;
+  }
+  &__mySwiper {
+    padding: 40px 10px 30px;
+  }
+  &__control {
+    position: absolute;
+    width: 150px;
+    height: 20px;
+    right: 0;
+    top: 0px;
+  }
+  .swiper-pagination {
+    width: fit-content;
+    bottom: unset;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__next,
+  &__prev {
+    width: 8px;
+    z-index: 10;
+    img {
+      width: 100% !important;
+      height: auto !important;
+      display: block;
     }
+    &::after {
+      content: "";
+    }
+  }
+  .swiper-pagination-bullet {
+    background: var(--second-button);
+    opacity: 1;
+    width: 9px;
+    height: 9px;
+    margin: 0 10px !important;
+  }
+  .swiper-pagination-bullet-active {
+    background: transparent;
+    border: 1px solid var(--second-button);
+    transform: scale(1.4);
+  }
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 }

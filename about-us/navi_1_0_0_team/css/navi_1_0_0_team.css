@@ -1,3 +1,62 @@
+.navi_1_0_0_team {
+  background: url(../images/bg.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 40px 0;
+}
+.navi_1_0_0_team__sub {
+  color: #005284;
+  margin-bottom: 10px;
+}
+.navi_1_0_0_team__title {
+  color: #333637;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.navi_1_0_0_team__list {
+  position: relative;
+}
+.navi_1_0_0_team__mySwiper {
+  padding: 40px 10px 30px;
+}
+.navi_1_0_0_team__control {
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  right: 0;
+  top: 0px;
+}
+.navi_1_0_0_team .swiper-pagination {
+  width: -moz-fit-content;
+  width: fit-content;
+  bottom: unset;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.navi_1_0_0_team__next, .navi_1_0_0_team__prev {
+  width: 8px;
+  z-index: 10;
+}
+.navi_1_0_0_team__next img, .navi_1_0_0_team__prev img {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+}
+.navi_1_0_0_team__next::after, .navi_1_0_0_team__prev::after {
+  content: "";
+}
+.navi_1_0_0_team .swiper-pagination-bullet {
+  background: var(--second-button);
+  opacity: 1;
+  width: 9px;
+  height: 9px;
+  margin: 0 10px !important;
+}
+.navi_1_0_0_team .swiper-pagination-bullet-active {
+  background: transparent;
+  border: 1px solid var(--second-button);
+  transform: scale(1.4);
+}
 .navi_1_0_0_team img {
   width: 100%;
   height: auto;

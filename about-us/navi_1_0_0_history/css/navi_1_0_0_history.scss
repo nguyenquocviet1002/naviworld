@@ -1,14 +1,16 @@
 .navi_1_0_0_history{
-    background-color: #fff;
-    padding: 30px 0;
+    background: url(../images/history-bg.jpg) no-repeat center center / cover;
+    padding: 40px 0;
     &__inner{
         display: flex;
         margin: 0 -20px;
     }
     &__img{
         width: 50%;
-        padding: 0 20px;
+        padding-right: 50px;
         img{
+            box-shadow: 10px 4px 35.4px 0px #0000001F;
+            border-radius: 10px;
             width: 100%;
             height: auto;
             display: block;
@@ -25,7 +27,7 @@
     }
     &__title{
         color: #333637;
-        font-size: 32px;
+        font-size: 40px;
         margin-bottom: 20px;
     }
     &__timeline{
@@ -34,6 +36,47 @@
             height: auto;
             display: block;
         }
+    }
+    &__item{
+        position: relative;
+        margin-bottom: 50px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        &.active{
+            .navi_1_0_0_history__year{
+                opacity: 1;
+                padding-left: 20px;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translate(-50%, 0);
+                    width: 20px;
+                    height: 3px;
+                    background: #2381BD;
+                }
+            }
+            .navi_1_0_0_history__text{
+                display: block;
+            }
+        }
+    }
+    &__year{
+        position: relative;
+        color: #202020;
+        font-family: var(--weight-600);
+        font-size: 32px;
+        margin-bottom: 10px;
+        opacity: 0.2;
+    }
+    &__text{
+        display: none;
+        position: absolute;
+        top: 20px;
+        left: 130px;
+        color: #7D7D7D;
     }
     @media (max-width: 767px){
         &__inner{
